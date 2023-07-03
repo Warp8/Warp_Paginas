@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Feed</title>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <div class="container" id="template-areas">
+        <div id="navbar">
+
+            <div id="navbar-item1">
+                <img src="./img/warp8 Logo.png" alt="">
+            </div>
+
+            <div id="navbar-item2">
+                <input type="search" id="search" placeholder='Pesquisar'>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div id="navbar-item3">
+                <ul>
+                    <li><a href="#"></a><i class="fa-sharp fa-solid fa-house fa-sm"></i>Home</li>
+                    <li><a href="#"></a><i class="fa-sharp fa-solid fa-pen fa-sm"> </i>Equipes</li>
+                    <li><a href="#"></a><i class="fa-solid fa-bell fa-sm"></i> Notificações</li>
+                    <li><a href="#"></a><i class="fa-solid fa-book-bookmark fa-sm"> </i>Trilhas</li>
+                    <li><a href="#"></a><i class="fa-solid fa-bag-shopping fa-sm"></i> Market</li>
+                    <li><a href="#"></a><i class="fa-solid fa-phone fa-sm"></i> Chamados</li>
+                    <li id="perfil"><a href="#"></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- POLIGONOS QUE VÃO SER OS UNIVERSOS QUE O USUÁRIO AINDA NÃO TEVE CONTATO -->
+        <div id="universos">
+                <div class="poligono" id="universo1"></div>
+                <div class="poligono" id="universo2"></div>
+                <div class="poligono"  id="universo3"></div>
+                <div class="poligono"  id="universo4"></div>
+                <div class="poligono"  id="universo5"></div>
+                <div class="poligono" id="universo6"></div>
+                <div class="poligono" id="universo7"></div>
+                <div class="poligono" id="universo8"></div>
+                <div class="poligono" id="universo9"></div>
+                <div class="poligono" id="universo10"></div>
+        </div>
+
+            
+
+        <!-- RESUMO DO PERFIL DO USUÁRIO -->
+        <div id="resumo">
+            <div class="box_photo">
+                <div class="photo"></div>
+            </div>
+            <div class="box_tags">
+                <div class="tag"></div>
+                <div class="tag tag1"></div>
+                <div class="tag tag2"></div>
+                <div class="tag tag3"></div>
+                <div class="tag tag4"></div>
+            </div>
+            <div class="information_profile">
+
+                <h3>Universos: <i class="fa-solid fa-magnifying-glass fa-xs"></i></h3>
+                <p>Universo Metal Punk</p>
+                <p>Moda Clássica</p>
+
+                <h3>Seus Universos:</h3>
+                <p>Classica model da Lapa</p>
+                <p>Classic model da Lapa</p>
+
+                <h3>Eventos</h3>
+                <p>Chá de moda clássica</p>
+                <p>Oficina de Pedraria</p>
+            </div>
+            <div class="box_line">
+                <div class="line"></div>
+            </div>
+
+            <div class="box_more">
+                <h3>Mais</h3>
+            </div>
+        </div>
+
+        <div id="centro">
+            <!-- CONTAINER PARA O USUÁRIO FAZER UMA PUBLICAÇÃO -->
+            <div id="publicacao">
+                <div class="container-public">
+                    <div class="profile_img"></div>
+                    <div class="search_feed">
+                        <input type="text" placeholder="Começar uma publicação" onclick="openPopup()">
+                    </div>
+                    <div class="icons_pop">
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-camera fa-lg"></i>Foto</a></li>
+                            <li><a href="#"><i class="fa-solid fa-video fa-lg"></i>Vídeo</a></li>
+                            <li><a href="#"><i class="fa-solid fa-circle-exclamation fa-lg"></i>Chamado</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <p id="popupContent"></p>
+                    </div>
+                </div>
+
+                <!-- O FILTRO PARA QUE O USUÁRIO SELECIONE AS PUBLICAÇÕES QUE VÃO APARECER NO SEU FEED -->
+                <div id="filtro">
+                    <p>Filtrar por: </p>
+                    <select id="opcoes">
+                        <option value="opcao1"> Destaques</option>
+                        <option value="opcao2"> Recentes</option>
+                    </select>
+                </div>
+
+                <!-- CONTAINER COM PUBLICAÇÃO DO FEED -->
+                <div id="postagem">
+                    <div class="container_scroll_retangule">
+                        <div class="person">
+                            <div class="profile_img2">
+                                <div class="online"></div>
+                            </div>
+                            <div class="profile_details">
+                                <h3>Larissa Alves</h3>
+                                <p>Seguindo</p>
+                            </div>
+                            <div class="text_person">
+                                <p>Moda é um setor em constante evolução, que reflete as tendências culturais e sociais
+                                    de
+                                    cada
+                                    época. Ela pode ser uma forma de expressão individual <span>...ver mais</span></p>
+                            </div>
+                        </div>
+                        <div class="container_img_person"></div>
+                    </div>
+
+                    <div class="container_scroll_retangule">
+                        <div class="person">
+                            <div class="profile_img2">
+                                <div class="online"></div>
+                            </div>
+                            <div class="profile_details">
+                                <h3>Larissa Alves</h3>
+                                <p>Seguindo</p>
+                            </div>
+                            <div class="text_person">
+                                <p>Moda é um setor em constante evolução, que reflete as tendências culturais e sociais
+                                    de
+                                    cada
+                                    época. Ela pode ser uma forma de expressão individual <span>...ver mais</span></p>
+                            </div>
+                        </div>
+                        <div class="container_img_person"></div>
+                    </div>
+
+                    <div class="container_scroll_retangule">
+                        <div class="person">
+                            <div class="profile_img2">
+                                <div class="online"></div>
+                            </div>
+                            <div class="profile_details">
+                                <h3>Larissa Alves</h3>
+                                <p>Seguindo</p>
+                            </div>
+                            <div class="text_person">
+                                <p>Moda é um setor em constante evolução, que reflete as tendências culturais e sociais
+                                    de
+                                    cada
+                                    época. Ela pode ser uma forma de expressão individual <span>...ver mais</span></p>
+                            </div>
+                        </div>
+                        <div class="container_img_person"></div>
+                    </div>
+
+
+                    <div class="container_scroll_retangule">
+                        <div class="person">
+                            <div class="profile_img2">
+                                <div class="online"></div>
+                            </div>
+                            <div class="profile_details">
+                                <h3>Larissa Alves</h3>
+                                <p>Seguindo</p>
+                            </div>
+                            <div class="text_person">
+                                <p>Moda é um setor em constante evolução, que reflete as tendências culturais e sociais
+                                    de
+                                    cada
+                                    época. Ela pode ser uma forma de expressão individual <span>...ver mais</span></p>
+                            </div>
+                        </div>
+                        <div class="container_img_person"></div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="direita">
+            <!-- RETANGULO COM A EQUIPE QUE O USUÁRIO ESTÁ REALIZANDO PROJETOS -->
+            <div id="equipes">
+                <div class="group01">
+                    <div class="box_photo_group">
+                        <div class="photo_group"></div>
+                    </div>
+                    <h3>Vestido Neon <i class="fa-solid fa-arrow-right fa-2xs"></i></h3>
+                    <p>Lorem ipsum dolor sit amet adipisicing. Quia officia ipsam...</p>
+                    <div class="box_members">
+                        <div class="members">
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <p>4 membros</p>
+                        </div>
+
+                        <div class="members_on">
+                            <div class="members_image2"></div>
+                            <div class="members_image2"></div>
+                            <p>2 on-line</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="group01">
+                    <div class="box_photo_group">
+                        <div class="photo_group"></div>
+                    </div>
+                    <h3>Vestido Neon <i class="fa-solid fa-arrow-right fa-2xs"></i></h3>
+                    <p>Lorem ipsum dolor sit amet adipisicing. Quia officia ipsam...</p>
+                    <div class="box_members">
+                        <div class="members">
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <p>4 membros</p>
+                        </div>
+
+                        <div class="members_on">
+                            <div class="members_image2"></div>
+                            <div class="members_image2"></div>
+                            <p>2 on-line</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="group01">
+                    <div class="box_photo_group">
+                        <div class="photo_group"></div>
+                    </div>
+                    <h3>Vestido Neon <i class="fa-solid fa-arrow-right fa-2xs"></i></h3>
+                    <p>Lorem ipsum dolor sit amet adipisicing. Quia officia ipsam...</p>
+                    <div class="box_members">
+                        <div class="members">
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <p>4 membros</p>
+                        </div>
+
+                        <div class="members_on">
+                            <div class="members_image2"></div>
+                            <div class="members_image2"></div>
+                            <p>2 on-line</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group01">
+                    <div class="box_photo_group">
+                        <div class="photo_group"></div>
+                    </div>
+                    <h3>Vestido Neon <i class="fa-solid fa-arrow-right fa-2xs"></i></h3>
+                    <p>Lorem ipsum dolor sit amet adipisicing. Quia officia ipsam...</p>
+                    <div class="box_members">
+                        <div class="members">
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <div class="members_image"></div>
+                            <p>4 membros</p>
+                        </div>
+
+                        <div class="members_on">
+                            <div class="members_image2"></div>
+                            <div class="members_image2"></div>
+                            <p>2 on-line</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+            <!-- LINKS PARA O USUÁRIO ACESSAR CASO PRECISE DE AJUDA OU QUEIRA INFORMAÇÕES -->
+            <div id="links">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Acessibilidade</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+            </div>
+
+            <!-- CHAT DO FEED -->
+            <div id="chat">
+                <div class="box_chat">
+                    <div class="container_chat">
+                        <p>Chat</p>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/fbf29013af.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
