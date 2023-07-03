@@ -1,0 +1,735 @@
+2023-07-02T11:30:00.325-03:00  INFO 18488 --- [restartedMain] com.crud.Login.LoginApplication          : Starting LoginApplication using Java 17.0.1 with PID 18488 (C:\Users\Aluno PROA\Desktop\Login\Login\target\classes started by Aluno PROA in C:\Users\Aluno PROA\Desktop\Login\Login)
+2023-07-02T11:30:00.340-03:00  INFO 18488 --- [restartedMain] com.crud.Login.LoginApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-02T11:30:00.475-03:00  INFO 18488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-02T11:30:00.477-03:00  INFO 18488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-02T11:30:02.026-03:00  INFO 18488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-02T11:30:02.151-03:00  INFO 18488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 1 MongoDB repository interfaces.
+2023-07-02T11:30:03.444-03:00  INFO 18488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-02T11:30:03.470-03:00  INFO 18488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-02T11:30:03.470-03:00  INFO 18488 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-02T11:30:03.629-03:00  INFO 18488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-02T11:30:03.630-03:00  INFO 18488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3152 ms
+2023-07-02T11:30:04.161-03:00  INFO 18488 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.1+12-LTS-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='pehnovaes00', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5850afd8, com.mongodb.Jep395RecordCodecProvider@3d59c942]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.mqtdva9.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ixmo1w-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-07-02T11:30:04.176-03:00  INFO 18488 --- [cluster-ClusterId{value='64a189ec5d089e58a3a83598', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T11:30:04.224-03:00  INFO 18488 --- [cluster-ClusterId{value='64a189ec5d089e58a3a83598', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T11:30:04.225-03:00  INFO 18488 --- [cluster-ClusterId{value='64a189ec5d089e58a3a83598', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T11:30:04.621-03:00  INFO 18488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-02T11:30:05.555-03:00  INFO 18488 --- [cluster-ClusterId{value='64a189ec5d089e58a3a83598', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=704008400, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6495c4f54264b5a2fff53cd7, counter=3}, lastWriteDate=Sun Jul 02 11:30:02 BRT 2023, lastUpdateTimeNanos=81277527366900}
+2023-07-02T11:30:05.555-03:00  INFO 18488 --- [cluster-ClusterId{value='64a189ec5d089e58a3a83598', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=708828000, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6495bfe1fb88c5c93aba8047, counter=4}, lastWriteDate=Sun Jul 02 11:30:02 BRT 2023, lastUpdateTimeNanos=81277527455900}
+2023-07-02T11:30:05.555-03:00  INFO 18488 --- [cluster-ClusterId{value='64a189ec5d089e58a3a83598', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=704275400, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000102, setVersion=8, topologyVersion=TopologyVersion{processId=6495c0e5560b9c4f99b8f3ac, counter=6}, lastWriteDate=Sun Jul 02 11:30:02 BRT 2023, lastUpdateTimeNanos=81277527466900}
+2023-07-02T11:30:05.564-03:00  INFO 18488 --- [cluster-ClusterId{value='64a189ec5d089e58a3a83598', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017 with max election id 7fffffff0000000000000102 and max set version 8
+2023-07-02T11:30:05.928-03:00  INFO 18488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-02T11:30:05.946-03:00  INFO 18488 --- [restartedMain] com.crud.Login.LoginApplication          : Started LoginApplication in 6.543 seconds (process running for 7.999)
+2023-07-02T11:31:14.358-03:00  INFO 18488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-02T11:31:14.359-03:00  INFO 18488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-02T11:31:14.362-03:00  INFO 18488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-02T11:59:01.739-03:00  INFO 17832 --- [restartedMain] com.crud.Login.LoginApplication          : Starting LoginApplication using Java 17.0.1 with PID 17832 (C:\Users\Aluno PROA\Desktop\Login\Login\target\classes started by Aluno PROA in C:\Users\Aluno PROA\Desktop\Login\Login)
+2023-07-02T11:59:01.746-03:00  INFO 17832 --- [restartedMain] com.crud.Login.LoginApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-02T11:59:01.884-03:00  INFO 17832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-02T11:59:01.885-03:00  INFO 17832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-02T11:59:03.504-03:00  INFO 17832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-02T11:59:03.650-03:00  INFO 17832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 1 MongoDB repository interfaces.
+2023-07-02T11:59:04.982-03:00  INFO 17832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-02T11:59:05.009-03:00  INFO 17832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-02T11:59:05.010-03:00  INFO 17832 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-02T11:59:05.190-03:00  INFO 17832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-02T11:59:05.192-03:00  INFO 17832 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3305 ms
+2023-07-02T11:59:05.706-03:00  INFO 17832 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.1+12-LTS-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='pehnovaes00', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@2970da10, com.mongodb.Jep395RecordCodecProvider@60a4b6ad]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.mqtdva9.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ixmo1w-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-07-02T11:59:05.748-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T11:59:05.803-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T11:59:05.805-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T11:59:06.128-03:00  INFO 17832 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-02T11:59:07.072-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=705278700, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000102, setVersion=8, topologyVersion=TopologyVersion{processId=6495c0e5560b9c4f99b8f3ac, counter=6}, lastWriteDate=Sun Jul 02 11:59:04 BRT 2023, lastUpdateTimeNanos=83019043730300}
+2023-07-02T11:59:07.074-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=705536700, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6495c4f54264b5a2fff53cd7, counter=3}, lastWriteDate=Sun Jul 02 11:59:04 BRT 2023, lastUpdateTimeNanos=83019043909400}
+2023-07-02T11:59:07.072-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=698656000, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6495bfe1fb88c5c93aba8047, counter=4}, lastWriteDate=Sun Jul 02 11:59:04 BRT 2023, lastUpdateTimeNanos=83019044044700}
+2023-07-02T11:59:07.082-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017 with max election id 7fffffff0000000000000102 and max set version 8
+2023-07-02T11:59:07.591-03:00  INFO 17832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-02T11:59:07.615-03:00  INFO 17832 --- [restartedMain] com.crud.Login.LoginApplication          : Started LoginApplication in 6.871 seconds (process running for 8.133)
+2023-07-02T12:00:18.798-03:00  INFO 17832 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-02T12:00:18.799-03:00  INFO 17832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-02T12:00:18.801-03:00  INFO 17832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-02T13:18:12.694-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:115) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:138) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T13:18:15.638-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:204) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:199) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:299) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.9.1.jar:na]
+	... 4 common frames omitted
+
+2023-07-02T13:22:39.698-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=363574100, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a428a2502e2f3b9ae714, counter=3}, lastWriteDate=Sun Jul 02 13:22:36 BRT 2023, lastUpdateTimeNanos=88031670997600}
+2023-07-02T13:24:30.729-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:115) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:138) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T13:24:33.785-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:204) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:199) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:299) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.9.1.jar:na]
+	... 4 common frames omitted
+
+2023-07-02T13:28:25.980-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=269662400, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a585e60d1a3f4b4d46a0, counter=3}, lastWriteDate=Sun Jul 02 13:28:23 BRT 2023, lastUpdateTimeNanos=88377955529700}
+2023-07-02T13:30:10.504-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:115) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:138) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T13:30:10.909-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=172629020, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000103, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a585e60d1a3f4b4d46a0, counter=4}, lastWriteDate=Sun Jul 02 13:30:06 BRT 2023, lastUpdateTimeNanos=88482883246300}
+2023-07-02T13:30:10.972-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=152565802, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='null', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a428a2502e2f3b9ae714, counter=4}, lastWriteDate=Sun Jul 02 13:30:06 BRT 2023, lastUpdateTimeNanos=88482946176200}
+2023-07-02T13:30:10.988-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=172629020, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000103, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a585e60d1a3f4b4d46a0, counter=6}, lastWriteDate=Sun Jul 02 13:30:08 BRT 2023, lastUpdateTimeNanos=88482962616300}
+2023-07-02T13:30:10.991-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017 with max election id 7fffffff0000000000000103 and max set version 8
+2023-07-02T13:30:13.237-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:204) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:199) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:299) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.9.1.jar:na]
+	... 4 common frames omitted
+
+2023-07-02T13:30:20.992-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=149436761, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a428a2502e2f3b9ae714, counter=4}, lastWriteDate=Sun Jul 02 13:30:17 BRT 2023, lastUpdateTimeNanos=88492966630500}
+2023-07-02T13:34:57.003-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=316794400, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a70ceda1ba7e59b06356, counter=3}, lastWriteDate=Sun Jul 02 13:31:06 BRT 2023, lastUpdateTimeNanos=88768978178800}
+2023-07-02T15:55:46.398-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:724) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:599) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:140) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596) ~[mongodb-driver-core-4.9.1.jar:na]
+	... 5 common frames omitted
+
+2023-07-02T15:55:46.383-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:724) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:599) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:140) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596) ~[mongodb-driver-core-4.9.1.jar:na]
+	... 5 common frames omitted
+
+2023-07-02T15:55:46.383-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:724) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:599) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:140) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596) ~[mongodb-driver-core-4.9.1.jar:na]
+	... 5 common frames omitted
+
+2023-07-02T15:55:46.933-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=317832500, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000103, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a585e60d1a3f4b4d46a0, counter=6}, lastWriteDate=Sun Jul 02 15:55:43 BRT 2023, lastUpdateTimeNanos=97218909547000}
+2023-07-02T15:55:46.933-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017 with max election id 7fffffff0000000000000103 and max set version 8
+2023-07-02T15:55:46.965-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=372434600, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a428a2502e2f3b9ae714, counter=4}, lastWriteDate=Sun Jul 02 15:55:43 BRT 2023, lastUpdateTimeNanos=97218941907200}
+2023-07-02T15:55:47.064-03:00  INFO 17832 --- [cluster-ClusterId{value='64a190b911bc68637f434695', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=369350200, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a70ceda1ba7e59b06356, counter=3}, lastWriteDate=Sun Jul 02 15:55:43 BRT 2023, lastUpdateTimeNanos=97219042730600}
+2023-07-02T15:57:16.376-03:00  INFO 20164 --- [restartedMain] com.crud.Login.LoginApplication          : Starting LoginApplication using Java 17.0.1 with PID 20164 (C:\Users\Aluno PROA\Desktop\Login\Login\target\classes started by Aluno PROA in C:\Users\Aluno PROA\Desktop\Login\Login)
+2023-07-02T15:57:16.381-03:00  INFO 20164 --- [restartedMain] com.crud.Login.LoginApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-02T15:57:16.484-03:00  INFO 20164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-02T15:57:16.484-03:00  INFO 20164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-02T15:57:17.816-03:00  INFO 20164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-02T15:57:17.949-03:00  INFO 20164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 1 MongoDB repository interfaces.
+2023-07-02T15:57:19.192-03:00  INFO 20164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-02T15:57:19.209-03:00  INFO 20164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-02T15:57:19.210-03:00  INFO 20164 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-02T15:57:19.331-03:00  INFO 20164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-02T15:57:19.332-03:00  INFO 20164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2845 ms
+2023-07-02T15:57:19.795-03:00  INFO 20164 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.1+12-LTS-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='pehnovaes00', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@46fd5563, com.mongodb.Jep395RecordCodecProvider@6f070106]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.mqtdva9.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ixmo1w-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-07-02T15:57:19.840-03:00  INFO 20164 --- [cluster-ClusterId{value='64a1c88f3e1d30627d30a473', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T15:57:19.906-03:00  INFO 20164 --- [cluster-ClusterId{value='64a1c88f3e1d30627d30a473', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T15:57:19.908-03:00  INFO 20164 --- [cluster-ClusterId{value='64a1c88f3e1d30627d30a473', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T15:57:20.273-03:00  INFO 20164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-02T15:57:21.544-03:00  INFO 20164 --- [cluster-ClusterId{value='64a1c88f3e1d30627d30a473', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=941802700, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a70ceda1ba7e59b06356, counter=3}, lastWriteDate=Sun Jul 02 15:57:18 BRT 2023, lastUpdateTimeNanos=97313515540000}
+2023-07-02T15:57:21.573-03:00  INFO 20164 --- [cluster-ClusterId{value='64a1c88f3e1d30627d30a473', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=974520100, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000103, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a585e60d1a3f4b4d46a0, counter=6}, lastWriteDate=Sun Jul 02 15:57:18 BRT 2023, lastUpdateTimeNanos=97313548255800}
+2023-07-02T15:57:21.575-03:00  INFO 20164 --- [cluster-ClusterId{value='64a1c88f3e1d30627d30a473', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017 with max election id 7fffffff0000000000000103 and max set version 8
+2023-07-02T15:57:21.590-03:00  INFO 20164 --- [cluster-ClusterId{value='64a1c88f3e1d30627d30a473', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=990774800, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a428a2502e2f3b9ae714, counter=4}, lastWriteDate=Sun Jul 02 15:57:18 BRT 2023, lastUpdateTimeNanos=97313564609200}
+2023-07-02T15:57:22.251-03:00  INFO 20164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-02T15:57:22.270-03:00  INFO 20164 --- [restartedMain] com.crud.Login.LoginApplication          : Started LoginApplication in 6.976 seconds (process running for 8.401)
+2023-07-02T15:58:49.032-03:00  INFO 20164 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-02T15:58:49.033-03:00  INFO 20164 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-02T15:58:49.037-03:00  INFO 20164 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-02T15:59:46.240-03:00 ERROR 20164 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Invalid salt version] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt version
+	at org.mindrot.jbcrypt.BCrypt.hashpw(BCrypt.java:659) ~[jbcrypt-0.4.jar:na]
+	at org.mindrot.jbcrypt.BCrypt.checkpw(BCrypt.java:764) ~[jbcrypt-0.4.jar:na]
+	at com.crud.Login.service.UserService.logar(UserService.java:38) ~[classes/:na]
+	at com.crud.Login.controller.UserController.loginUsuario(UserController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T16:00:15.996-03:00 ERROR 20164 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Invalid salt version] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt version
+	at org.mindrot.jbcrypt.BCrypt.hashpw(BCrypt.java:659) ~[jbcrypt-0.4.jar:na]
+	at org.mindrot.jbcrypt.BCrypt.checkpw(BCrypt.java:764) ~[jbcrypt-0.4.jar:na]
+	at com.crud.Login.service.UserService.logar(UserService.java:38) ~[classes/:na]
+	at com.crud.Login.controller.UserController.loginUsuario(UserController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T16:00:25.778-03:00 ERROR 20164 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Invalid salt version] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt version
+	at org.mindrot.jbcrypt.BCrypt.hashpw(BCrypt.java:659) ~[jbcrypt-0.4.jar:na]
+	at org.mindrot.jbcrypt.BCrypt.checkpw(BCrypt.java:764) ~[jbcrypt-0.4.jar:na]
+	at com.crud.Login.service.UserService.logar(UserService.java:38) ~[classes/:na]
+	at com.crud.Login.controller.UserController.loginUsuario(UserController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T16:03:47.997-03:00 ERROR 20164 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Invalid salt version] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt version
+	at org.mindrot.jbcrypt.BCrypt.hashpw(BCrypt.java:659) ~[jbcrypt-0.4.jar:na]
+	at org.mindrot.jbcrypt.BCrypt.checkpw(BCrypt.java:764) ~[jbcrypt-0.4.jar:na]
+	at com.crud.Login.service.UserService.logar(UserService.java:38) ~[classes/:na]
+	at com.crud.Login.controller.UserController.loginUsuario(UserController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T16:05:20.925-03:00 ERROR 20164 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Invalid salt version] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt version
+	at org.mindrot.jbcrypt.BCrypt.hashpw(BCrypt.java:659) ~[jbcrypt-0.4.jar:na]
+	at org.mindrot.jbcrypt.BCrypt.checkpw(BCrypt.java:764) ~[jbcrypt-0.4.jar:na]
+	at com.crud.Login.service.UserService.logar(UserService.java:38) ~[classes/:na]
+	at com.crud.Login.controller.UserController.loginUsuario(UserController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T16:06:15.759-03:00 ERROR 20164 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Invalid salt version] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt version
+	at org.mindrot.jbcrypt.BCrypt.hashpw(BCrypt.java:659) ~[jbcrypt-0.4.jar:na]
+	at org.mindrot.jbcrypt.BCrypt.checkpw(BCrypt.java:764) ~[jbcrypt-0.4.jar:na]
+	at com.crud.Login.service.UserService.logar(UserService.java:38) ~[classes/:na]
+	at com.crud.Login.controller.UserController.loginUsuario(UserController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T16:09:52.176-03:00 ERROR 20164 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Invalid salt version] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt version
+	at org.mindrot.jbcrypt.BCrypt.hashpw(BCrypt.java:659) ~[jbcrypt-0.4.jar:na]
+	at org.mindrot.jbcrypt.BCrypt.checkpw(BCrypt.java:764) ~[jbcrypt-0.4.jar:na]
+	at com.crud.Login.service.UserService.logar(UserService.java:38) ~[classes/:na]
+	at com.crud.Login.controller.UserController.loginUsuario(UserController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T16:10:24.737-03:00 ERROR 20164 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Invalid salt version] with root cause
+
+java.lang.IllegalArgumentException: Invalid salt version
+	at org.mindrot.jbcrypt.BCrypt.hashpw(BCrypt.java:659) ~[jbcrypt-0.4.jar:na]
+	at org.mindrot.jbcrypt.BCrypt.checkpw(BCrypt.java:764) ~[jbcrypt-0.4.jar:na]
+	at com.crud.Login.service.UserService.logar(UserService.java:38) ~[classes/:na]
+	at com.crud.Login.controller.UserController.loginUsuario(UserController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.10.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-07-02T16:33:10.661-03:00  INFO 8748 --- [restartedMain] com.crud.Login.LoginApplication          : Starting LoginApplication using Java 17.0.1 with PID 8748 (C:\Users\Aluno PROA\Desktop\Login\Login\target\classes started by Aluno PROA in C:\Users\Aluno PROA\Desktop\Login\Login)
+2023-07-02T16:33:10.666-03:00  INFO 8748 --- [restartedMain] com.crud.Login.LoginApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-02T16:33:10.824-03:00  INFO 8748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-02T16:33:10.825-03:00  INFO 8748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-02T16:33:12.596-03:00  INFO 8748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-02T16:33:12.732-03:00  INFO 8748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 1 MongoDB repository interfaces.
+2023-07-02T16:33:14.360-03:00  INFO 8748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-02T16:33:14.397-03:00  INFO 8748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-02T16:33:14.397-03:00  INFO 8748 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-02T16:33:14.855-03:00  INFO 8748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-02T16:33:14.856-03:00  INFO 8748 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4029 ms
+2023-07-02T16:33:15.489-03:00  INFO 8748 --- [cluster-ClusterId{value='64a1d0fbc6f8b937c3d2b797', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T16:33:15.571-03:00  INFO 8748 --- [cluster-ClusterId{value='64a1d0fbc6f8b937c3d2b797', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T16:33:15.573-03:00  INFO 8748 --- [cluster-ClusterId{value='64a1d0fbc6f8b937c3d2b797', description='null'}-srv-cluster0.mqtdva9.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017 to client view of cluster
+2023-07-02T16:33:15.598-03:00  INFO 8748 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.1+12-LTS-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='pehnovaes00', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@333576ab, com.mongodb.Jep395RecordCodecProvider@32ac79a2]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.mqtdva9.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ixmo1w-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-07-02T16:33:16.340-03:00  INFO 8748 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-02T16:33:17.398-03:00  INFO 8748 --- [cluster-ClusterId{value='64a1d0fbc6f8b937c3d2b797', description='null'}-ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=930465100, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a70ceda1ba7e59b06356, counter=3}, lastWriteDate=Sun Jul 02 16:33:14 BRT 2023, lastUpdateTimeNanos=99469370647000}
+2023-07-02T16:33:17.399-03:00  INFO 8748 --- [cluster-ClusterId{value='64a1d0fbc6f8b937c3d2b797', description='null'}-ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=930514200, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a428a2502e2f3b9ae714, counter=4}, lastWriteDate=Sun Jul 02 16:33:14 BRT 2023, lastUpdateTimeNanos=99469370647100}
+2023-07-02T16:33:17.398-03:00  INFO 8748 --- [cluster-ClusterId{value='64a1d0fbc6f8b937c3d2b797', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=931214400, setName='atlas-ixmo1w-shard-0', canonicalAddress=ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017, hosts=[ac-tlvmpve-shard-00-00.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-01.mqtdva9.mongodb.net:27017, ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000103, setVersion=8, topologyVersion=TopologyVersion{processId=64a1a585e60d1a3f4b4d46a0, counter=6}, lastWriteDate=Sun Jul 02 16:33:14 BRT 2023, lastUpdateTimeNanos=99469371416100}
+2023-07-02T16:33:17.409-03:00  INFO 8748 --- [cluster-ClusterId{value='64a1d0fbc6f8b937c3d2b797', description='null'}-ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-tlvmpve-shard-00-02.mqtdva9.mongodb.net:27017 with max election id 7fffffff0000000000000103 and max set version 8
+2023-07-02T16:33:18.662-03:00  INFO 8748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-02T16:33:18.699-03:00  INFO 8748 --- [restartedMain] com.crud.Login.LoginApplication          : Started LoginApplication in 9.113 seconds (process running for 10.409)
+2023-07-02T16:35:15.012-03:00  INFO 8748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-02T16:35:15.014-03:00  INFO 8748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-02T16:35:15.018-03:00  INFO 8748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
