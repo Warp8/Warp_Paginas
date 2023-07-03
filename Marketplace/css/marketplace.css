@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: "Lato", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(
+      243.18deg,
+      #72023e 0%,
+      #3e0638 16.21%,
+      #030a31 44.79%,
+      #02061c 70.83%,
+      #000000 93.23%
+    );
+    height: 100%;
+  }
+  
+  .input-group input::placeholder{
+    color: #fff;
+  }
+  .bg-custom {
+    background-color: #161515;
+  }
+  .logo{
+    width: 200px;
+  
+  }
+  .nav{
+    color: #161515;
+  }
+  
+  .search-bar input {
+    color: #fff;
+    background: linear-gradient(
+      243.18deg,
+      #72023e 0%,
+      #3e0638 16.21%,
+      #030a31 44.79%,
+      #02061c 70.83%,
+      #000000 93.23%
+    );
+    border: none;
+   height: 50px;
+  
+  }
+  
+  
+  .search-bar i {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: white;
+  }
+  
+  
+  .search-bar input[type="search"] {
+    transition: color 0.3s ease;
+    color: #fff;
+    width: 400px;
+  
+  }
+  li a{
+    color: #fff;
+  }
+  
+  .collapse{
+    align-items: center;
+    display: flex;
+    
+  }
+  .nav-item{
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+      color: #fff;
+      padding: 5px 20px;
+      border: 1px solid transparent;
+      transition: 0.20s ease;
+  }
+  
+  .icons-header{
+    color: #fff;
+    margin-left: 10px;
+  }
+  .icons-header i{
+    color: #fff;
+    margin: 30px;
+    
+    
+  }
+  
+  
+  .carousel {
+    height: 100vh; 
+    margin-left: 10%;
+    margin-top: 2%;
+   
+  }
+  
+  .carousel-inner {
+    text-align: center;
+    border-radius: 5vh;
+  }
+  
+  .carousel-item {
+    max-height: 70vh;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 50%;
+   
+  }
+  
+  .card-body{
+    font-style: normal ;
+    color: white;
+  }
+  
+  .card{
+    background: #161515;
+    margin-left: 5%;
+    
+  }
+  
+  .btn-prod{
+    background: linear-gradient(243.18deg, #72023E 0%, #3E0638 16.21%, #030A31 44.79%, #02061C 70.83%, #000000 93.23%);
+    border: none;
+  }
+  
+  .card-container {
+    display: flex;
+    margin-bottom: 5%;
+   
+  }
+  
+  .link{
+    justify-content: center;
+    align-items: center;
+    margin-left: 48%;
+    
+  }
+  
+  .text{
+    color: #fff;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  
+  .Linha{
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+  
+  
+  .heart:hover{
+    color: red;
+  }
+  
+  .user:hover, .bag:hover{
+    color: #72023e;
+  }
+  
+  .nav-item:hover{
+      background: linear-gradient(243.18deg, #72023E 0%, #3E0638 16.21%, #030A31 44.79%, #02061C 70.83%, #000000 93.23%);
+      color: #fff;
+      border-radius: 50%; }
+  
+      .rodape {
+        width: 100%;
+        /* position: relative; */
+        background: url(../src/assets/img/textura.png);
+        color: white;
+        height: 449px;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+      }
+      
+      .sobre_nos h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        margin-left: 30px;
+      }
+      
+      .sobre_nos p {
+        font-size: 13px;
+        margin-left: 30px;
+        color: #d3c4c4;
+      }
+      
+      .importantes {
+        margin-left: 350px;
+      }
+      .importantes h2 {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 30px;
+      }
+      .importantes ul {
+        list-style: none;
+      }
+      
+      .importantes li {
+        margin-bottom: 20px;
+      }
+      
+      .importantes a {
+        text-decoration: none;
+        color: #d3c4c4;
+        font-weight: bold;
+      }
+      
+      .importantes a:hover {
+        color: #fff;
+      }
+      
+      .fale_conosco {
+        margin-left: 350px;
+      }
+      
+      .fale_conosco h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
+      }
+      
+      .fale_conosco ul {
+        list-style: none;
+      }
+      
+      .fale_conosco li {
+        margin-bottom: 30px;
+      }
+      
+      .fale_conosco a {
+        text-decoration: none;
+        color: #d3c4c4;
+      }
+      
+      .fale_conosco a:hover {
+        color: #fff;
+      }
+      
+      .fale_conosco i {
+        margin-right: 5px;
+      }
+      
+      /* .fale_conosco span{
+          margin-right: 3px;
+        } */
+      
+      .linha_rodape img {
+        width: 100%;
+        margin-left: 5%;
+      }
+      
+      .bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+      }
+      .logo_rodape {
+        margin-left: 30px;
+      }
+      .bottom p {
+        margin-left: 40px;
+      }
+      
+      .social-icons {
+        margin-left: 650px;
+      }
+      
+      .social-icons ul {
+        display: flex;
+        justify-content: center;
+      }
+      .social-icons li {
+        margin-right: 15px;
+        list-style: none;
+      }
+      
+      .social-icons a {
+        color: white;
+      }
+      
+      .fa-instagram:hover {
+        background: linear-gradient(
+          to right,
+          #feda75,
+          #fa7e1e,
+          #d62976,
+          #962fbf,
+          #4f5bd5
+        );
+        background-clip:unset ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .fa-youtube:hover {
+        background: #d73d32;
+        background-clip:unset ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .fa-facebook-f:hover {
+        background: #3b5998;
+        background-clip:unset ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .fa-twitter:hover {
+        background: #54a4d6;
+        background-clip:unset ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      #linha1{
+        margin-left: 5%;
+        margin-top: 5%;
+      }
+  
+      .botao-seta button{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      margin-top: 200px;
+      margin-left:100px;
+     
+      
+    
+      }

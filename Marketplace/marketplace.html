@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marketplace</title>
+  <link rel="icon" type="img" href="./img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/marketplace.css">
+</head>
+
+<body>
+  <!-- =============================navbar============================= -->
+  <header class="nav navbar navbar-expand-lg navbar-dark bg-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo" src="./img/logomarkblack.png" alt=""></a>
+      <button class="navbar-toggler navbar-toggler-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="search-bar" role="search">
+        <div class="input-group">
+          <input class="form-control me-2 rounded-3" type="search" placeholder="Pesquisar" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </form>
+      <div class="icons-header d-flex justify-content-between">
+        <a href="stylesheet"><i class="user fa-solid fa-user mr-3"></i></a>
+        <a href="stylesheet"><i class="bag fa-solid fa-bag-shopping mr-3"></i></a>
+        <a href="stylesheet"><i class="heart fa-solid fa-heart"></i></a>
+      </div>
+    </div>
+  </header>
+  <nav class="nav navbar navbar-expand-lg navbar-dark bg-custom">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto flex-column flex-lg-row">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Feminino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Masculino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Infantil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acessórios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- =============================navbar============================= -->
+  <!-- =============================Carousel============================= -->
+  <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center align-items-center"
+    style="max-width: 80%;">
+    <div class="carousel-indicators ">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active "
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    
+  
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/carrosel3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/carrosel2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/carrosel1.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- =============================Carousel============================= -->
+
+  <p class="text fs-1">Destaques</p>
+
+  <div class="card-container">
+    <!-- =============================Produto 01============================= -->
+    <div class="card rounded-5"
+      style="width: 18rem; background-image: url('./img/fundo.png'); background-repeat: no-repeat; background-position: right; background-size: cover; margin-right: 10px;">
+      <img src="./img/vestido.png" class="card-img-top" style="margin-left: 2%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vestido midi tricot com franja</h5>
+        <p class="card-text">Uma peça elegante e sofisticada, perfeita para quem busca um visual único e cheio de
+          estilo. Feito em tricot de alta qualidade.</p>
+        <a href="#" class="btn-prod btn btn-primary">Ver Produto</a>
+      </div>
+    </div>
+    <!-- =============================Produto 01============================= -->
+    <!-- =============================Produto 02============================= -->
+    <div class="card rounded-5"
+      style="width: 18rem; background-image: url('./img/fundo.png'); background-repeat: no-repeat; background-position: right; background-size: cover; margin-right: 10px;">
+      <img src="./img/vestido.png" class="card-img-top" style="margin-left: 2%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vestido midi tricot com franja</h5>
+        <p class="card-text">Uma peça elegante e sofisticada, perfeita para quem busca um visual único e cheio de
+          estilo. Feito em tricot de alta qualidade.</p>
+        <a href="#" class="btn-prod btn btn-primary">Ver Produto</a>
+      </div>
+    </div>
+    <!-- =============================Produto 02============================= -->
+    <!-- =============================Produto 03============================= -->
+    <div class="card rounded-5"
+      style="width: 18rem; background-image: url('./img/fundo.png'); background-repeat: no-repeat; background-position: right; background-size: cover; margin-right: 10px;">
+      <img src="./img/vestido.png" class="card-img-top" style="margin-left: 2%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vestido midi tricot com franja</h5>
+        <p class="card-text">Uma peça elegante e sofisticada, perfeita para quem busca um visual único e cheio de
+          estilo. Feito em tricot de alta qualidade.</p>
+        <a href="#" class="btn-prod btn btn-primary">Ver Produto</a>
+        <!-- =============================Produto 03============================= -->
+      </div>
+    </div>
+    <div class="botao-seta"><button><i class="fa-solid fa-arrow-right"></i></button></div>
+  </div>
+
+
+  <div class="container">
+    <img src="./img/linha.png" class="Linha img-fluid" alt="">
+  </div>
+  <p class="text fs-1">Mais Vendidos</p>
+
+
+  <div class="card-container">
+    <!-- =============================Produto 01============================= -->
+    <div class="card rounded-5"
+      style="width: 18rem; background-image: url('./img/fundo.png'); background-repeat: no-repeat; background-position: right; background-size: cover; margin-right: 10px;">
+      <img src="./img/vestido.png" class="card-img-top" style="margin-left: 2%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vestido midi tricot com franja</h5>
+        <p class="card-text">Uma peça elegante e sofisticada, perfeita para quem busca um visual único e cheio de
+          estilo. Feito em tricot de alta qualidade.</p>
+        <a href="#" class="btn-prod btn btn-primary">Ver Produto</a>
+      </div>
+    </div>
+    <!-- =============================Produto 01============================= -->
+    <!-- =============================Produto 02============================= -->
+    <div class="card rounded-5"
+      style="width: 18rem; background-image: url('./img/fundo.png'); background-repeat: no-repeat; background-position: right; background-size: cover; margin-right: 10px;">
+      <img src="./img/vestido.png" class="card-img-top" style="margin-left: 2%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vestido midi tricot com franja</h5>
+        <p class="card-text">Uma peça elegante e sofisticada, perfeita para quem busca um visual único e cheio de
+          estilo. Feito em tricot de alta qualidade.</p>
+        <a href="#" class="btn-prod btn btn-primary">Ver Produto</a>
+      </div>
+    </div>
+    <!-- =============================Produto 02============================= -->
+    <!-- =============================Produto 03============================= -->
+    <div class="card rounded-5"
+      style="width: 18rem; background-image: url('./img/fundo.png'); background-repeat: no-repeat; background-position: right; background-size: cover; margin-right: 10px;">
+      <img src="./img/vestido.png" class="card-img-top" style="margin-left: 2%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vestido midi tricot com franja</h5>
+        <p class="card-text">Uma peça elegante e sofisticada, perfeita para quem busca um visual único e cheio de
+          estilo. Feito em tricot de alta qualidade.</p>
+        <a href="#" class="btn-prod btn btn-primary">Ver Produto</a>
+        <!-- =============================Produto 03============================= -->
+      </div>
+    </div>
+    <div class="botao-seta"><button><i class="fa-solid fa-arrow-right"></i></button></div>
+  </div>
+
+
+  <div class="Linha container">
+    <img src="./img/linha.png" class=" img-fluid" alt="">
+  </div>
+
+
+  <div class="rodape">
+    <div class="sobre_nos">
+      <h2>Sobre nós</h2>
+      <p>Nossa plataforma conecta profissionais da <br> indústria em todo o mundo, permitindo <br> que eles
+        se conectem com
+        designers, <br> fabricantes, distribuidores, varejistas <br> e influenciadores. Oferecemos recursos <br>
+        para expandir sua
+        rede de contatos, como <br> perfis detalhados, grupos de discussão, <br> eventos online e offline.</p>
+    </div>
+    <div class="importantes">
+      <h2>Importantes</h2>
+      <ul>
+        <li>
+          <a href="#">Minha conta</a>
+        </li>
+
+        <li>
+          <a href="#">Equipes</a>
+        </li>
+
+        <li>
+          <a href="#">Trilha de Estudos</a>
+        </li>
+      </ul>
+    </div>
+    <div class="fale_conosco">
+      <h2>Fale conosco</h2>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i>phillfresco2023@gmail.com</a></li>
+        <li><a href="#"> <i class="fa-solid fa-phone"></i><span>+55</span>(11) 99999 - 9999</a></li>
+      </ul>
+    </div>
+    <div class="linha_rodape">
+      <img src="./img/linha.png" />
+
+    </div>
+
+    <div class="bottom">
+
+      <img class="logo_rodape" src="./img/black.png" />
+
+      <div class="social-icons">
+        <ul>
+          <li><a href="https://www.instagram.com/warp_8/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/@Warp-qj1oi/featured"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <p>Copyright &copy; 2023 Warp8 Todos os direitos reservados</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/fbf29013af.js" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
