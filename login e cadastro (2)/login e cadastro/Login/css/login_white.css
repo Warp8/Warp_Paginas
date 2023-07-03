@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    243.18deg,
+    #72023e 0%,
+    #3e0638 16.21%,
+    #030a31 44.79%,
+    #02061c 70.83%,
+    #000000 93.23%
+  );
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container {
+  display: grid;
+  background-color: #fff;
+  width: 60%;
+  height: 450px;
+  grid-template-columns: 1.3fr 1fr; /*Dividi um container em duas partes: a esquerda fica a imagem e a direita os inputs*/
+  border-radius: 30px;
+}
+
+.img {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/mulheres\ trabalhando\ juntas.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 28px 0px 0px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.login h2 {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.campos {
+  margin-top: 15%;
+}
+
+.e-mail {
+  margin-bottom: 10%;
+}
+
+.e-mail input {
+  margin-left: 2%;
+  border-bottom: 0.5px solid #02061c;
+  padding-bottom: 8px;
+  background: none;
+}
+
+.e-mail input:focus {
+  outline: none;
+}
+
+.e-mail i {
+  font-size: 1.3em;
+  color: #02061c;
+}
+
+.e-mail input::placeholder {
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.senha {
+  margin-bottom: 10%;
+}
+
+.senha input {
+  margin-left: 2%;
+  border-bottom: 0.5px solid #02061c;
+  padding-bottom: 8px;
+  background: none;
+}
+
+.senha input:focus {
+  outline: none;
+}
+
+.senha i {
+  font-size: 1.3em;
+  color: #02061c;
+}
+
+.senha input::placeholder {
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.password-icon{
+  cursor: pointer;
+}
+
+.btn {
+  margin-left: 16%;
+}
+
+.btn button {
+  cursor: pointer;
+  padding: 8px;
+  background: linear-gradient(
+    243.18deg,
+    #72023e 0%,
+    #3e0638 16.21%,
+    #030a31 44.79%,
+    #02061c 70.83%,
+    #000000 93.23%
+  );
+  width: 60%;
+  border-radius: 70px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.login p {
+  margin-top: 8%;
+  margin-left: 7%;
+  font-size: 13px;
+  color: #8c7c7c;
+}
+
+.login p a {
+  color: #72023e;
+}
+
+
+
+/* ESTILIZANDO BOTÃO PARA MUDAR O TEMA DA PÁGINA */
+.tema {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  margin-right: 10%;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #171A23;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #dbff00;
+  box-shadow:0 0 5px 2px #DBFF00;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+  z-index: -1;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+  z-index: 1;
+}
+
+.fa-moon {
+  color: #fff;
+  margin-right: 2px;
+  z-index: 2;
+}
+
+.fa-sun {
+  color: white;
+  z-index: 2;
+}
+
+/* MENSAGEM PARA APARECER SE OS INPUTS FICAREM VAZIOS */
+
+.erro {
+  margin-left: 30%;
+  margin-top: 2%;
+  color: red;
+  font-size: 12px;
+}
+
+/* MEDIA QUERY PARA CELULARES E TELAS PEQUENAS COM LAGURA MÍNIMA DE 320PX E LARGURA MÁXIMA DE 768PX */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #main-container {
+    width: 60%;
+    grid-template-columns: 1fr;
+    border-radius: 15px;
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .img {
+    border-radius: 14px 14px 0 0;
+  }
+
+  .login {
+    margin: 3% 8%;
+  }
+  
+  .login h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .login p{
+    text-align: center;
+    font-size: 11px;
+  }
+  .campos {
+    margin-top: 10%;
+  }
+  .e-mail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15%;
+  }
+
+  .senha{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15%;
+  }
+
+  .e-mail input{
+    width: 80%;
+    margin-left: 0;
+  }
+  .e-mail input::placeholder{
+    padding-left: 1%;
+  }
+  .e-mail i {
+    padding-right: 1%;
+    font-size: 1em;
+  }
+  .senha input{
+    width: 80%;
+    margin-left: 0%;
+  }
+  .senha input::placeholder{
+    padding-left: 1%;
+  }
+  .senha i{
+    padding-right: 1%;
+    font-size: 1em;
+  }
+  .password-icon{
+    margin-left: -8%;
+  }
+  .erro{
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 0;
+    color: transparent;
+  }
+  .btn {
+    margin-left: 0;
+  }
+  
+  .btn button {
+    width: 100%;
+  }
+  
+  .tema {
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+
+  .label {
+    /* ... */
+    height: 20px; /* Reduz a altura do botão */
+    width: 40px; /* Reduz a largura do botão */
+    transform: scale(1.2); /* Reduz a escala do botão */
+  }
+  
+  .label .ball {
+    /* ... */
+    height: 16px; /* Reduz a altura da bola */
+    width: 16px; /* Reduz a largura da bola */
+    transform: translateX(0px); /* Reduz o deslocamento da bola */
+  }
+  
+  .checkbox {
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERY PARA TABLETS DE LARGURA MÍNIMA DE 768PX ATÉ UMA LARGURA MÁXIMA DE 992PX*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #main-container {
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .img{
+    border-radius: 14px 0 0 14px;
+  }
+
+  .login{
+    margin-top: 6%;
+  }
+
+  .login p{
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .campos{
+    margin-top: 30%;
+  }
+
+  .e-mail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20%;
+  }
+
+  .senha{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20%;
+  }
+
+  .e-mail input{
+    width: 80%;
+    margin-left: 0;
+  }
+  .e-mail input::placeholder{
+    padding-left: 1%;
+  }
+  .e-mail i {
+    font-size: 1.1em;
+  }
+  .senha input{
+    width: 80%;
+    margin-left: 0%;
+  }
+  .senha input::placeholder{
+    padding-left: 1%;
+  }
+  .senha i{
+    font-size: 1.1em;
+  }
+  .password-icon{
+    margin-left: -8%;
+  }
+  .erro{
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 0;
+    color: transparent;
+  }
+
+  .btn{
+    margin-left: 0;
+  }
+
+  .btn button{
+    width: 90%;
+  }
+
+  .login p{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  .tema {
+    justify-content: flex-end;
+    margin-right: 10%;
+  }
+
+  .label {
+    /* ... */
+    height: 20px; /* Reduz a altura do botão */
+    width: 40px; /* Reduz a largura do botão */
+    transform: scale(1.2); /* Reduz a escala do botão */
+  }
+  
+  .label .ball {
+    /* ... */
+    height: 16px; /* Reduz a altura da bola */
+    width: 16px; /* Reduz a largura da bola */
+    transform: translateX(0px); /* Reduz o deslocamento da bola */
+  }
+  
+  .checkbox {
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERY PARA DESKTOP COM LARGURA MINIMA DE 992PX E LARGURA MAXIMA DE 1200PX */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #main-container {
+    width: 60%;
+    grid-template-columns: 1.2fr 1fr;
+    border-radius: 15px;
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .img{
+    border-radius: 14px 0 0 14px;
+  }
+
+  .login{
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .login p{
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .campos{
+    margin-top: 15%;
+  }
+
+  .e-mail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15%;
+  }
+
+  .senha{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15%;
+  }
+
+  .e-mail input{
+    width: 80%;
+    margin-left: 0;
+  }
+  .e-mail input::placeholder{
+    padding-left: 0%;
+  }
+  .e-mail i {
+    font-size: 1.1em;
+  }
+  .senha input{
+    width: 80%;
+    margin-left: 0%;
+  }
+  .senha input::placeholder{
+    padding-left: 0%;
+  }
+  .senha i{
+    font-size: 1.1em;
+  }
+  .password-icon{
+    margin-left: -8%;
+  }
+  .erro{
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 0;
+    color: transparent;
+  }
+
+  .btn{
+    margin-left: 5%;
+  }
+
+  .btn button{
+    width: 90%;
+  }
+
+  .login p{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 13px;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de login da Warp para nosso usuário poder acessar seu feed">
+    <meta name="keywords" content="Moda, Universos, Estilos">
+    <meta name="author" content="Ariany Alves e Guilherme Patrinhani">
+    <meta property="og:title" content="Faça seu login na Warp">
+    <link rel="shortcut icon" href="img/tesouraHead.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login_white.css" id="cssLink">
+    <title>Login</title>
+</head>
+
+
+<body>
+    <!-- Container que vai ser dividio em duas colunas para do lado esquerdo ter a imagem e do direito os campos de entrada -->
+    <div id="main-container">
+
+        <!-- Coluna 1 com a imagem e logo sobreposta -->
+        <div class="img">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+        </div>
+
+        
+        <!-- Coluna 2 com os campos de entrada -->
+        <div class="login">
+
+            <!-- Botao para mudar o tema da página -->
+            <div class="tema">
+                <input type="checkbox" class="checkbox" id="chk">
+                <label class="label" for="chk" type="button" onclick="trocarCSS('css/login_dark.css')">
+                    <i class="sol fas fa-sun"></i>
+                    <i class="lua fas fa-moon"></i>
+                  <div class="ball"></div>
+                </label>
+              </div>
+              <button type=""></button>
+            <!-- Área com os inputs para se fazer o login -->
+            <h2>Login</h2>
+            <div class="campos">
+                <div class="e-mail">
+                    <i class="icon fas fa-circle-user"></i>
+                    <input id="email" type="email" placeholder="Insira o seu e-mail" required>
+                    <span id="emailErro" class="erro"></span>
+                </div>
+                <div class="senha">
+                    <i class="icon fas fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Insira a sua senha" required>
+                    <i class="password-icon" id="togglePassword">&#x1f441;</i>
+                    <span id="passwordErro" class="erro"></span>
+                </div>
+            </div>
+
+            <div class="btn">
+                <button id="botaoLogin" type="button" onclick="feedIr()">Entrar</button>
+            </div>
+
+            <p>Ainda não possui uma conta? <a href="http://127.0.0.1:5501/login%20e%20cadastro/Cadastro/cadastro.html">Criar conta</a></p>
+
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/fbf29013af.js" crossorigin="anonymous"></script>
+     <script src="js/login.js"></script> 
+    <script src="js/userLogin.js"></script>
+</body>
+
+</html>
